@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>JAS - Admin</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="firebase.js"></script>
+<script defer src="admin.js"></script>
+</head>
+<body>
+<header class="banner">JAS - Admin Panel</header>
+
+
+<div class="card">
+<h2>Upload Notes / Worksheets / Videos</h2>
+
+
+<select id="classSelect">
+<option disabled selected>Select Class</option>
+<option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+<option>11</option><option>12</option>
+</select>
+
+
+<select id="subjectSelect">
+<option disabled selected>Select Subject</option>
+<option>Maths</option>
+<option>Science</option>
+<option>Social</option>
+<option>English</option>
+<option>Biology</option>
+<option>Chemistry</option>
+<option>Physics</option>
+<option>IP</option>
+</select>
+
+
+<input type="file" id="fileInput">
+<button onclick="uploadFile()">Upload</button>
+<p id="uploadMsg"></p>
+</div>
+
+
+<div class="card">
+<h2>Uploaded Files</h2>
+<div id="fileList"></div>
+</div>
+</body>
+</html>
