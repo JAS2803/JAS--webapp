@@ -1,4 +1,4 @@
-function loadFiles() {
+ function loadFiles() {
 const cls = document.getElementById("classFilter").value;
 const sub = document.getElementById("subjectFilter").value;
 
