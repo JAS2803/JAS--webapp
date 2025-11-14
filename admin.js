@@ -1,4 +1,4 @@
- function uploadFile() {
+function uploadFile() {
 const cls = document.getElementById("classSelect").value;
 const sub = document.getElementById("subjectSelect").value;
 const file = document.getElementById("fileInput").files[0];
