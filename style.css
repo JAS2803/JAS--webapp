@@ -1,0 +1,42 @@
+body {
+background: #f1faff;
+font-family: Arial;
+padding: 20px;
+}
+.banner {
+background: linear-gradient(90deg, #ff6ad5, #8c52ff, #5ce1e6);
+padding: 20px;
+color: white;
+text-align: center;
+font-size: 35px;
+font-weight: bold;
+border-radius: 10px;
+}
+.card {
+background: white;
+padding: 20px;
+margin-top: 20px;
+border-radius: 12px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+button {
+background: #8c52ff;
+color: white;
+padding: 10px;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+}
+input, select {
+width: 100%;
+margin: 10px 0;
+padding: 10px;
+border-radius: 6px;
+border: 1px solid #ccc;
+}
+.file-item {
+background: #eef;
+padding: 10px;
+margin: 6px 0;
+border-radius: 6px;
+}
