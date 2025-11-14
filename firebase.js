@@ -1,21 +1,21 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
+import { getAuth } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-auth.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore.js";
+import { getStorage } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-storage.js";
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// Your Firebase config
 const firebaseConfig = {
-  apiKey: "AIzaSyCva5ual6u7uI74EDFXCP3uP4_AkbFu1RE",
-  authDomain: "joy-ambition-self-control-jas.firebaseapp.com",
-  projectId: "joy-ambition-self-control-jas",
-  storageBucket: "joy-ambition-self-control-jas.firebasestorage.app",
-  messagingSenderId: "278700155958",
-  appId: "1:278700155958:web:9131712eafeb0791a8a497",
-  measurementId: "G-Q4F49RGQX2"
+  apiKey: "AIzaSyBEah1GSoyYGY7v18tuUNOwm7yFo7SppDE",
+  authDomain: "jas-89e85.firebaseapp.com",
+  projectId: "jas-89e85",
+  storageBucket: "jas-89e85.firebasestorage.app",
+  messagingSenderId: "983859139258",
+  appId: "1:983859139258:web:0f93e35a09960688b5a883",
+  measurementId: "G-YEM9HVY119"
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+export const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
+export const db = getFirestore(app);
+export const storage = getStorage(app);
