@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>JAS - Students</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="firebase.js"></script>
+<script defer src="student.js"></script>
+</head>
+<body>
+<header class="banner">JAS - Study Material</header>
+
+
+<div class="card">
+<h2>Select Class & Subject</h2>
+
+
+<select id="classFilter">
+<option disabled selected>Select Class</option>
+<option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+<option>11</option><option>12</option>
+</select>
+
+
+<select id="subjectFilter">
+<option disabled selected>Select Subject</option>
+<option>Maths</option>
+<option>Science</option>
+<option>Social</option>
+<option>English</option>
+<option>Biology</option>
+<option>Chemistry</option>
+<option>Physics</option>
+<option>IP</option>
+</select>
+
+
+<button onclick="loadFiles()">Show Files</button>
+</div>
+
+
+<div class="card">
+<h2>Available Downloads</h2>
+<div id="studentFiles"></div>
+</div>
+</body>
+</html>
